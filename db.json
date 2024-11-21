@@ -1,0 +1,49 @@
+{
+  "events": [
+    {
+      "title": "Ralexs Tech Meetup bonanza",
+      "date": "2021-12-31",
+      "time": "18:00",
+      "description": "A tech meetup for developers",
+      "location": "1234 Tech Street, Tech City",
+      "organizer": "Ralex",
+      "id": "9368"
+    },
+    {
+      "title": "Tech Conference",
+      "date": "2021-12-31",
+      "time": "18:00",
+      "description": "A tech conference for developers",
+      "location": "1234 Tech Street, Tech City",
+      "organizer": "Tech Conference",
+      "id": "ce50"
+    },
+    {
+      "title": "Tech Workshop",
+      "date": "2021-12-31",
+      "time": "18:00",
+      "description": "A tech workshop for developers",
+      "location": "1234 Tech Street, Tech City",
+      "organizer": "Tech Workshop",
+      "id": "80b8"
+    },
+    {
+      "id": "903a",
+      "title": "Code City",
+      "date": "2024-11-19",
+      "time": "18:55",
+      "description": "Here we will be coding code that will code other code and this is really important to code because it will make other code code",
+      "location": "Everywhere",
+      "organizer": "Bob Sagget"
+    },
+    {
+      "id": "65e5",
+      "title": "Evently",
+      "date": "2024-11-26",
+      "time": "18:55",
+      "description": "Just some tech people doing tech things with tech people and we're just taking all the time just tech tech tech that's what I'm all about ever been on TikTok it's great",
+      "location": "Everywhere",
+      "organizer": "John M"
+    }
+  ]
+}
