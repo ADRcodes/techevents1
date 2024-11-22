@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 const AddEvent = ({ onAdd }) => {
-  const [eventTitle, setEventTitle] = useState('Bob')
+  const [eventTitle, setEventTitle] = useState('')
   const [eventDate, setEventDate] = useState('')
   const [eventTime, setEventTime] = useState('')
   const [eventDescription, setEventDescription] = useState('')
@@ -78,13 +78,11 @@ const AddEvent = ({ onAdd }) => {
 
       <form onSubmit={onSubmit} className="event-form">
         <div className="form-group">
-          <label htmlFor="title" className="form-label">
-            Title
-          </label>
           <input
             type="text"
             id="title"
             name="title"
+            placeholder='Event Title'
             value={eventTitle}
             onChange={(e) => setEventTitle(e.target.value)}
             className={`form-input ${errors.title ? 'input-error' : ''}`}
@@ -93,13 +91,12 @@ const AddEvent = ({ onAdd }) => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="date" className="form-label">
-            Date
-          </label>
           <input
-            type="date"
+            type="text"
             id="date"
             name="date"
+            placeholder='📅'
+            onFocus={(e) => e.target.type = 'date'}
             value={eventDate}
             onChange={(e) => setEventDate(e.target.value)}
             className={`form-input ${errors.date ? 'input-error' : ''}`}
@@ -112,9 +109,11 @@ const AddEvent = ({ onAdd }) => {
             Time
           </label>
           <input
-            type="time"
+            type="text"
             id="time"
             name="time"
+            placeholder='🕰️'
+            onFocus={(e) => e.target.type = 'time'}
             value={eventTime}
             onChange={(e) => setEventTime(e.target.value)}
             className={`form-input ${errors.time ? 'input-error' : ''}`}
@@ -123,13 +122,11 @@ const AddEvent = ({ onAdd }) => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="description" className="form-label">
-            Description
-          </label>
-          <input
+          <textarea
             type="text"
             id="description"
             name="description"
+            placeholder='Event Description'
             value={eventDescription}
             onChange={(e) => setEventDescription(e.target.value)}
             className={`form-input ${errors.description ? 'input-error' : ''}`}
@@ -140,13 +137,11 @@ const AddEvent = ({ onAdd }) => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="location" className="form-label">
-            Location
-          </label>
           <input
             type="text"
             id="location"
             name="location"
+            placeholder='Event Location'
             value={eventLocation}
             onChange={(e) => setEventLocation(e.target.value)}
             className={`form-input ${errors.location ? 'input-error' : ''}`}
@@ -157,13 +152,11 @@ const AddEvent = ({ onAdd }) => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="organizer" className="form-label">
-            Organizer
-          </label>
           <input
             type="text"
             id="organizer"
             name="organizer"
+            placeholder='Event Organizer'
             value={eventOrganizer}
             onChange={(e) => setEventOrganizer(e.target.value)}
             className={`form-input ${errors.organizer ? 'input-error' : ''}`}
